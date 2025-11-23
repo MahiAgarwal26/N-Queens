@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N-Queens Visualizer (CSP + FC + MRV)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="side">
+      <h2>N-Queens — CSP Visualizer</h2>
+
+      <label>N Size</label>
+      <select id="nSize">
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option selected>8</option>
+        <option>10</option>
+      </select>
+
+      <label>Algorithm / Mode</label>
+      <select id="algo">
+        <option value="bt">Backtracking (row order)</option>
+        <option value="fc">Backtracking + Forward Checking</option>
+        <option value="mrv">MRV + Forward Checking</option>
+      </select>
+
+      <button id="run">Run</button>
+      <button id="step">Step</button>
+      <button id="reset">Reset</button>
+
+      <label>Speed (ms)</label>
+      <input id="speed" type="range" min="20" max="1000" value="300" />
+      <div class="small">Delay: <span id="speedVal">300</span> ms</div>
+
+      <div id="status">Status: Idle</div>
+
+      <div class="counters">
+        <div class="counter">
+          <div class="small">Checked</div>
+          <div id="countChecked">0</div>
+        </div>
+        <div class="counter">
+          <div class="small">Backtracks</div>
+          <div id="countBack">0</div>
+        </div>
+        <div class="counter">
+          <div class="small">Assignments</div>
+          <div id="countAssign">0</div>
+        </div>
+      </div>
+
+      <h3 style="color: #7dd3fc; margin-top: 12px">Step Log</h3>
+      <div id="logBox"></div>
+
+      <div id="domainBox"></div>
+    </div>
+
+    <div id="board"><div id="grid"></div></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
