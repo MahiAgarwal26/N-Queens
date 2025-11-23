@@ -18,14 +18,14 @@ The visualizer is built using **pure HTML, CSS, and JavaScript**.
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🎯 Algorithms Implemented
+### Algorithms Implemented
 - **Backtracking (BT)** – simple DFS search  
 - **Forward Checking (FC)** – prunes invalid domain values early  
 - **MRV + Forward Checking** – selects the row with the fewest domain values  
 
-### 🎥 Visualization Tools
+### Visualization Tools
 - Step-by-step queen placement & removal  
 - Highlighted conflicts  
 - Live **domain table** (visible only for FC / MRV modes)  
@@ -35,20 +35,20 @@ The visualizer is built using **pure HTML, CSS, and JavaScript**.
   - Backtracks  
   - Domain prunes  
 
-### 🕹️ Controls
+### Controls
 - Select **N size**  
 - Choose **algorithm mode**  
 - Adjust **animation speed**  
 
 ---
 
-## 🧠 CSP Concepts Demonstrated
+## CSP Concepts Demonstrated
 
-### ✔️ Backtracking Search  
+### Backtracking Search  
 Recursive depth-first approach with conflict checking.
 
-### ✔️ Forward Checking  
+### Forward Checking  
 Maintains domain lists for each row and prunes invalid values before deeper recursion.
 
-### ✔️ MRV Heuristic  
+### MRV Heuristic  
 Chooses the next variable (row) with the **minimum remaining valid columns**, greatly reducing search effort.
