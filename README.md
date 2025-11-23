@@ -69,3 +69,7 @@ Integrated step-wise generator logic and constraint propagation
 Structured project into HTML/CSS/JS files
 
 Wrote documentation and improved layout, logs, and counter
+
+## Access the Visualizer
+You can access and try the full N-Queens CSP Visualizer here:  
+https://mahiagarwal26.github.io/N-Queens/
