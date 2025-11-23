@@ -52,3 +52,20 @@ Maintains domain lists for each row and prunes invalid values before deeper recu
 
 ### MRV Heuristic  
 Chooses the next variable (row) with the **minimum remaining valid columns**, greatly reducing search effort.
+
+## Contributors
+
+### Mahi
+Implemented core N-Queens visualization (board, rendering, animations)
+
+Added UI controls and interaction flow (run, step, reset)
+
+### Omkar
+Developed CSP algorithms (Backtracking, Forward Checking, MRV)
+
+Integrated step-wise generator logic and constraint propagation
+
+### Aditya
+Structured project into HTML/CSS/JS files
+
+Wrote documentation and improved layout, logs, and counter
